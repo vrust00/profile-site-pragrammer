@@ -78,6 +78,7 @@ table {
   font-style: normal;
 }
 .home {
+  position: fixed;
   background-color: rgb(124, 123, 123);
   font-family: "Heading";
   padding-top: 5vh;
@@ -87,19 +88,23 @@ table {
   text-align: center;
   overflow: hidden;
   overscroll-behavior: contain;
+  z-index: 10;
   padding-bottom: 20px;
 }
 .home__name {
+  color: white;
   font-size: 10vw;
   font-weight: 200;
   letter-spacing: 10%;
 }
 .home__job {
+  color: white;
   font-size: 8vw;
   font-weight: 100;
   letter-spacing: 10%;
 }
 .home__title {
+  color: white;
   width: 70%;
   margin-top: clamp(10px, 10vw, 80px);
   font-size: 100px;
@@ -109,7 +114,7 @@ table {
   transform: scaleX(1.5);
   word-wrap: break-word;
 }
-.home__about-btn {
+.home__home-btn {
   margin-top: 5vh;
   border-radius: 100px;
   background-color: #FF833E;
@@ -122,22 +127,27 @@ table {
   height: 70%;
 }
 
+.slide {
+  transform: translateX(-100vw);
+  transition: 1s;
+}
+
 .header {
   position: relative;
   background-color: white;
   height: 100px;
+  z-index: -1;
 }
 .header__programmer-img {
-  display: block;
-  z-index: 0;
+  position: fixed;
+  left: 25%;
   width: 50%;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: -2%;
 }
 @media (max-width: 768px) {
   .header__programmer-img {
     width: 80vw;
+    left: 9%;
   }
 }
 .header__contact-btn {
@@ -150,7 +160,7 @@ table {
 .main {
   margin-top: 30vw;
   position: relative;
-  z-index: 3;
+  z-index: -1;
   color: lightgrey;
   background-color: black;
   border-radius: 100px;

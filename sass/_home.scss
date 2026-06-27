@@ -1,4 +1,6 @@
+
 .home{
+   position: fixed;
    background-color: rgb(124, 123, 123);
    font-family: "Heading";
    padding-top: 5vh;
@@ -8,22 +10,25 @@
    text-align: center;
    overflow: hidden;
    overscroll-behavior: contain;
-   
+   z-index: 10;
    padding-bottom: 20px;
+   
    &__name{
-      
+      color:white;
       font-size: 10vw;
       font-weight: 200;
       letter-spacing: 10%;
    }
 
    &__job{
+      color:white;
       font-size: 8vw;
       font-weight: 100;
       letter-spacing: 10%;
    }
 
    &__title{
+      color:white;
       width: 70%;
       margin-top: clamp(10px,10vw,80px);
       font-size: 100px;
@@ -34,7 +39,7 @@
       word-wrap: break-word;
    }
 
-   &__about-btn{
+   &__home-btn{
       margin-top: 5vh;
       border-radius: 100px;
       background-color: #FF833E;
@@ -48,4 +53,13 @@
       height: 70%;
       
    }
+}
+
+.slide{
+      
+      transform: translateX(-100vw);
+      transition: 1s;
+      
+   
+   
 }
