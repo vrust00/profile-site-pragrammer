@@ -12,12 +12,16 @@
    overscroll-behavior: contain;
    z-index: 10;
    padding-bottom: 20px;
-   
+
+   display: flex;
+   flex-direction: column;
+
    &__name{
       color:white;
       font-size: 10vw;
       font-weight: 200;
       letter-spacing: 10%;
+      
    }
 
    &__job{
@@ -25,11 +29,14 @@
       font-size: 8vw;
       font-weight: 100;
       letter-spacing: 10%;
+      
    }
 
    &__title{
       color:white;
-      width: 70%;
+      width: 65%;
+      margin-left: auto;
+      margin-right: auto;
       margin-top: clamp(10px,10vw,80px);
       font-size: 100px;
       line-height: 80px;
@@ -37,6 +44,7 @@
       display: inline-block;
       transform: scaleX(1.5); 
       word-wrap: break-word;
+      
    }
 
    &__home-btn{
@@ -44,8 +52,11 @@
       border-radius: 100px;
       background-color: #FF833E;
       height: 10%;
-      width: 30vw;
+      width: 20vw;
       cursor: pointer;
+      margin-left: auto;
+      margin-right: auto;
+      
    }
 
    &__btn-arrow{

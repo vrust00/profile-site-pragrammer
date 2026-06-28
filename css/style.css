@@ -77,6 +77,15 @@ table {
   font-weight: 100;
   font-style: normal;
 }
+* {
+  pointer-events: none;
+}
+
+.home__home-btn,
+.header__contact-btn {
+  pointer-events: auto;
+}
+
 .home {
   position: fixed;
   background-color: rgb(124, 123, 123);
@@ -90,6 +99,8 @@ table {
   overscroll-behavior: contain;
   z-index: 10;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .home__name {
   color: white;
@@ -105,7 +116,9 @@ table {
 }
 .home__title {
   color: white;
-  width: 70%;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: clamp(10px, 10vw, 80px);
   font-size: 100px;
   line-height: 80px;
@@ -119,8 +132,10 @@ table {
   border-radius: 100px;
   background-color: #FF833E;
   height: 10%;
-  width: 30vw;
+  width: 20vw;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
 }
 .home__btn-arrow {
   width: 60%;
@@ -137,12 +152,15 @@ table {
   background-color: white;
   height: 100px;
   z-index: -1;
+  transform: translateX(100vw);
 }
 .header__programmer-img {
   position: fixed;
   left: 25%;
   width: 50%;
+  z-index: 1;
   margin-top: -2%;
+  pointer-events: none;
 }
 @media (max-width: 768px) {
   .header__programmer-img {
@@ -155,6 +173,44 @@ table {
   z-index: 1;
   top: 20px;
   right: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  pointer-events: auto !important;
+}
+.header__contact-btn-img {
+  pointer-events: none;
+  display: block;
+}
+
+.menu {
+  z-index: 0;
+  position: fixed;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  color: white;
+  transform: translateX(-100vw);
+  transition: 0.5s;
+  text-align: right;
+}
+.menu__contact-btn {
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  right: 40px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  pointer-events: auto !important;
+}
+
+.menu-unslide {
+  transform: translateX(0);
+  transition: 0.5s;
 }
 
 .main {
@@ -170,6 +226,8 @@ table {
   text-align: center;
   font-family: "Heading";
   overflow: hidden;
+  transform: translateX(100vw);
+  opacity: 0;
 }
 .main__name {
   margin-top: 40px;
@@ -215,4 +273,10 @@ table {
   .main {
     margin-top: 50vw;
   }
+}
+
+.unslide {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 1s;
 }/*# sourceMappingURL=style.css.map */

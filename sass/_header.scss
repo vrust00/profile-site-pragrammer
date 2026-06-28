@@ -1,32 +1,47 @@
-.header{
+
+.header {
    position: relative;
    background-color: white;
    height: 100px;
    z-index: -1;
-   &__programmer-img{
-      
+   transform: translateX(100vw);
+
+   &__programmer-img {
       position: fixed;
-      
-      
       left: 25%;
       width: 50%;
-      
+      z-index: 1;
       margin-top: -2%;
+      pointer-events: none; 
       @media (max-width: 768px) {
-         width: 80vw;  
+         width: 80vw;
          left: 9%;
       }
-         
-   }
-   
-
-
-   &__contact-btn{
-      position:fixed;
-      z-index: 1;
-      top:20px;
-      right: 20px;
       
    }
+
+   &__contact-btn {
+      position: fixed;
+      z-index: 1;    
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 0;
+      pointer-events: auto !important;  
+   }
+
+   &__contact-btn-img {
+      pointer-events: none;     
+      display: block;
+   }
+
+   
 }
+
+
+
+
+
 

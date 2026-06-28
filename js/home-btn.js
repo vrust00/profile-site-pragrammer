@@ -1,13 +1,14 @@
 const btn = document.querySelector('.home__home-btn');
-const mainbg = document.querySelector('.home-bg');
-// const mainblocks = document.querySelector('.hide');
+const homebg = document.querySelector('.home-bg');
+const blocks = document.querySelectorAll('.header, .main');
 
 btn.addEventListener('click', () => {
-   mainbg.classList.add('slide');
-   // mainblocks.classList.remove('hide');
+   homebg.classList.add('slide');
+   blocks.forEach(block => block.classList.add('unslide'));
    
-   mainbg.addEventListener('transitionend', ()=>{
-      mainbg.style.display = 'none'
+   
+   homebg.addEventListener('transitionend', ()=>{
+      homebg.style.display = 'none'
       
    })
 })
