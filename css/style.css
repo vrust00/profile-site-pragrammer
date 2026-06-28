@@ -188,24 +188,45 @@ table {
   z-index: 0;
   position: fixed;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-bottom-right-radius: 100px;
-  border-bottom-left-radius: 100px;
+  background-color: rgba(0, 0, 0, 0.95);
   color: white;
   transform: translateX(-100vw);
   transition: 0.5s;
   text-align: right;
 }
+.menu__title {
+  font-family: "Heading";
+  font-weight: 500;
+  font-size: 10vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 3vw;
+}
 .menu__contact-btn {
   position: fixed;
   z-index: 1;
-  top: 20px;
-  right: 40px;
+  top: 32px;
+  right: 48px;
   cursor: pointer;
   background: none;
   border: none;
   padding: 0;
   pointer-events: auto !important;
+}
+.menu__img-container {
+  margin-top: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.menu__img {
+  margin-bottom: 50px;
+  width: 200px;
 }
 
 .menu-unslide {

@@ -6,7 +6,7 @@ openmenu.addEventListener('click', () => {
    
       menu.classList.add('menu-unslide');
    
-   
+      
 })
 
 closemenu.addEventListener('click', () => {
@@ -15,3 +15,4 @@ closemenu.addEventListener('click', () => {
    
    
 })
+
