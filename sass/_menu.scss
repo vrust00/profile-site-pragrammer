@@ -38,6 +38,7 @@
    }
 
    &__img-container{
+      
       margin-top: 15vh;
       margin-left: auto;
       margin-right: auto;
@@ -47,6 +48,7 @@
    }
 
    &__img{
+      cursor: pointer;
       margin-bottom: 50px;
       width: 200px;
       

@@ -82,7 +82,8 @@ table {
 }
 
 .home__home-btn,
-.header__contact-btn {
+.header__contact-btn,
+.menu__img {
   pointer-events: auto;
 }
 
@@ -243,6 +244,7 @@ body {
   flex-direction: column;
 }
 .menu__img {
+  cursor: pointer;
   margin-bottom: 50px;
   width: 200px;
 }
